@@ -1,7 +1,7 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
-} */
+}
 
 :root {
     --col-primary : rgba(55, 161, 248, 0.867);
@@ -86,7 +86,8 @@ body {
 
 .background {
     position: relative;
-    margin-left: -16px;
+    position: sticky;
+    /* margin-left: -16px; */
 }
 
 .background_img {
@@ -102,7 +103,7 @@ body {
     min-height: 80vh;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed
+    background-attachment: fixed;
 }
 
 .home_section_body {
@@ -167,8 +168,9 @@ body {
     flex-direction: column;
     width: 25vw;
     margin: 40px;
-    border-radius: 10px;
-
+    /* border-radius: 10px; */
+    padding: 10px;
+   transition: all .2s ease;
 }
 
 .rate_card__img {
@@ -177,7 +179,7 @@ body {
     object-fit: cover;
     max-width: 100%;
     height: 300px;
-    transition: all 5s linear;
+   
 }
 
 .rate_card:hover {
@@ -223,7 +225,23 @@ body {
     color: var(--colgrey);
 }
 
+.about_us_super_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.h_header {
+    /* border: 2px solid crimson; */
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+}
+
 ._header {
+    /* border: 2px solid crimson; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,8 +255,6 @@ body {
     background-image: url(../media/images/.header.jpg);
     text-transform: uppercase;
     font-size: 5rem;
-    line-height: 0;
-    /* -webkit-text-fill-color: transparent; */
     -webkit-background-clip: text;
     background-clip: text;
 
@@ -260,7 +276,7 @@ body {
 }
 
 .about_us_card {
-    --size: 25rem;
+    --size: 23rem;
     width: var(--size);
     height: 9rem;
     margin: 0 20px;
@@ -282,20 +298,6 @@ body {
     font-size: 1rem;
     color: rgb(188, 188, 188);
     word-spacing: 8px;
-}
-
-.about_us_card_middle {
-    --size: 25rem;
-    width: var(--size);
-    height: 9rem;
-    margin: 0 60px;
-    padding: 1rem;
-    background-color: #eee;
-    border-radius: 10px;
-    margin-bottom: 0.5rem;
-    border: 2px solid transparent;
-    opacity: 1.0;
-    transition: all .5s ease;
 }
 
 .about_us_card_middle:hover {
@@ -374,7 +376,9 @@ body {
 
 .location {
     display: flex;
-    justify-content: space-around;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
     padding: 5px;
 }
@@ -382,7 +386,15 @@ body {
 .cost_btn {
     background-color: rgb(23, 129, 216);
     border-radius: 5px;
+    padding: 10px;
     border: none;
     font-weight: 600;
     color: #fff;
+}
+
+.destinations_super_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
