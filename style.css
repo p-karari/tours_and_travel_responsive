@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* overflow: hidden; */
 }
 
 :root {
@@ -183,6 +184,7 @@ body {
 }
 
 .rate_card:hover {
+    border-radius: 50px;
     transform: rotate(5deg);
     box-shadow: 3px 3px #999;
 }
@@ -237,7 +239,11 @@ body {
     width: fit-content;
     height: fit-content;
     padding: 20px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 ._header {
@@ -398,3 +404,98 @@ body {
     align-items: center;
     justify-content: space-around;
 }
+
+/* .team_super_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.team_card_cont {
+    width: 20rem;
+    height: 31rem;
+    border-radius: 10px;
+    border: 1px solid red;
+    background-color: rgba(58, 114, 235, 0.996);
+    color: white;
+}
+
+.team_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    
+}
+
+.team_card_img {
+    position: relative;
+    width: 20rem;
+    height: 27rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+    /* opacity: 0.4; */
+}
+
+.member_name {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.member_position {
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.member_img{
+    position: relative;
+}
+.social_svgs {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 5px;
+    left: 8px;
+    width: 60px;
+    height: 300px;
+    /* border: 1px solid crimson; */
+}
+
+.social_svg {
+    width: 30px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    height: 25px;
+}
+
+/* .social_svg, svg {
+    width: 30px;
+} */
+
+.team_section_header {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.team_section_desription{
+    border: 1px solid yelow;
+    align-items: center;
+    text-align: center;
+    width: 60vw;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(188, 188, 188);
+}
+
+
